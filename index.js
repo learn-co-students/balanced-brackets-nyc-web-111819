@@ -9,6 +9,8 @@ const isBalanced = str => {
       if(resultArray[resultArray.length-2] === hashMap[char]){
         resultArray.pop()
         resultArray.pop()
+      } else {
+        return false
       }
     }
   }
